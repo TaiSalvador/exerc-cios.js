@@ -138,9 +138,9 @@ console.log(maior)
 // Exercício 15
 
 let numeros = [27,38,49,52,73], menor = 90
-for(i = 0; i < numero.length; i++){
-    if (menor > numero[i]){
-        menor = numero[i]
+for(i = 0; i < numeros.length; i++){
+    if (menor > numeros[i]){
+        menor = numeros[i]
     }
 }
 console.log(menor);
@@ -148,7 +148,33 @@ console.log(menor);
 // Exercício 16
 
 let n = 5, resultado
-for (i = 1; i < n; i++){
-resultado *= i;
+for (i = 4; i >=1; i--){
+resultado = i * n
+n = resultado
 }
 console.log(resultado)
+
+// Exercício 17
+
+let valor = [1,2,3,4,5,6,7,8,9,10]
+
+for(i = 0; i < valor.length; i++){
+    if (valor[i] % 2 === 0){
+        console.log("Este número par", valor[i])
+    } else{
+        console.log("Este número é impar", valor[i])
+    }
+}
+
+// Exercício 18
+
+let texto = "Rebolar errado pro crias tras morte"
+let vogal = ["a","e","i","o","u"]
+let contadores = 0
+
+for(i = 0; i < texto.length; i++){
+    if(i = vogal["a","e","i","o","u"]){
+        contadores++
+        console.log("Existem", contadores, "vogais")
+    }
+}                        
