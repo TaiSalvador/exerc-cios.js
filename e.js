@@ -147,10 +147,9 @@ console.log(menor);
 
 // Exercício 16
 
-let n = 5, resultado
-for (i = 4; i >=1; i--){
-resultado = i * n
-n = resultado
+let n = 5, resultado = 1
+for (i = 1; i <= n; i++){
+resultado *= i
 }
 console.log(resultado)
 
@@ -159,7 +158,7 @@ console.log(resultado)
 let valor = [1,2,3,4,5,6,7,8,9,10]
 
 for(i = 0; i < valor.length; i++){
-    if (valor[i] % 2 === 0){
+    if (valor[i] % 2 == 0){
         console.log("Este número par", valor[i])
     } else{
         console.log("Este número é impar", valor[i])
@@ -173,8 +172,33 @@ let vogal = ["a","e","i","o","u"]
 let contadores = 0
 
 for(i = 0; i < texto.length; i++){
-    if(i = vogal["a","e","i","o","u"]){
+    if(vogal.includes(texto[i])){
         contadores++
-        console.log("Existem", contadores, "vogais")
+
     }
-}                        
+}    
+console.log("Existem", contadores, "vogais")
+
+// Exercício 19
+
+let textos = "Gabriela líder ruim", t = ""
+
+for (i = textos.length - 1; i >= 0; i--){
+        t += textos[i]
+        
+}   
+console.log(t)
+
+
+// Exercício 20
+
+//let inicio = 10, fim = 20
+
+//for(i = inicio; i <= fim; i++){
+  //  if(i % i == 0) and (i % 1 == 0){
+    //    console.log("Este número é primo");
+   // }else{
+     //   console.log("Este número não é primo");
+    
+   // }
+//}
